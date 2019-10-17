@@ -311,6 +311,45 @@ function getRefLimit(address _pAddress, address _referrer)
       isOut(_referrer)
   );
 }
+
+function gameCore(uint256 _rID, address _pAddress, uint256 _eth)
+	private
+{
+	//5%
+	uint256 _pot = _eth.mul(5).div(100);
+	round[_rID].pot = _pot.add(round[_rID].pot);
+	//6%
+	calVReward(_pAddress, _eth);
+	//
+	calBusAndV4(_pAddress, _eth);
+	//2%
+	sendPion(_pAddress, _eth);
+	//6%
+	poi = poi.add(_eth.mul(6).div(100));
+}
+
+function tokenCore(uint256 _rID, address _pAddress, uint256 _eth)
+	private
+{
+	//25%
+	uint256 _pot = _eth.mul(25).div(100);
+	round[_rID].pot = _pot.add(round[_rID].pot);
+	//
+	Game.registPion(_pAddress, _eth);
+	exchangeToken(_pAddress, _eth);
+	//16%
+	disInprove(_eth);
+	//34%
+	depositTo(_eth);
+	//25%
+	despositV4To(_eth);
+}
+
+function disInprove(uint256 _eth)
+	private
+{
+	invVal = invVal.add(_eth.mul(16).div(100));
+}
 ```
 
 ## Our open source license
