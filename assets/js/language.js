@@ -58,7 +58,8 @@ var language_json = {
 		"lb-player-stats":"Player data stats",
 		"lb-global-stats":"Global data stats",
 		"lb-his-rg":"History ETH champion",
-		"lb-his-rt":"History lucky prize"
+		"lb-his-rt":"History lucky prize",
+		"lb-his-rg-maxrefs":"ETH champion eth"
 	},
 	"jp":{
 		"lb-rule":"ルール",
@@ -119,7 +120,8 @@ var language_json = {
 		"lb-player-stats":"プレイヤー統計",
 		"lb-global-stats":"グローバル統計",
 		"lb-his-rg":"歴史の冠ETH",
-		"lb-his-rt":"歴史的ラッキー賞"
+		"lb-his-rt":"歴史的ラッキー賞",
+		"lb-his-rg-maxrefs":"ETHクラウンエーテル"
 	},
 	"zh":{
 		"lb-rule":"規則",
@@ -179,8 +181,9 @@ var language_json = {
 		"lb-player-income":"玩家收益",
 		"lb-player-stats":"玩家數據統計",
 		"lb-global-stats":"全局數據統計",
-		"lb-his-rg":"上壹輪ETH之冠",
-		"lb-his-rt":"上壹輪幸運獎"
+		"lb-his-rg":"上輪ETH之冠",
+		"lb-his-rt":"上輪幸運獎",
+		"lb-his-rg-maxrefs":"上輪ETH之冠推荐以太数"
 	},
 	"kr":{
 		"lb-rule":"규칙",
@@ -241,6 +244,7 @@ var language_json = {
 		"lb-player-stats":"선수 통계",
 		"lb-global-stats":"글로벌 통계",
 		"lb-his-rg":"어퍼 ETH 챔피언",
-		"lb-his-rt":"마지막 라운드 행운의 상"
+		"lb-his-rt":"마지막 라운드 행운의 상",
+		"lb-his-rg-maxrefs":"ETH 크라운 에테르"
 	}
 	};
