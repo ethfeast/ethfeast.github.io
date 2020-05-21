@@ -4,7 +4,7 @@ contract ETHFeast {
 	
 	uint256 stcPerior = 1 days;
 	uint256 poltime = 72 hours;
-	uint256 zeroPerior = 7 days;
+	uint256 zeroPerior = 30 days;
 	
 	using SafeMath for *;
   
